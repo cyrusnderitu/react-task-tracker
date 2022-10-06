@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    height: 100vh;
+    margin:  0 auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+button, .btn{
+    padding: .25rem .75rem;
+    border-radius: .5rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: antiquewhite;
+    background-color: #282b28;
+    cursor: pointer;
+}
+nav{
+    background-color: antiquewhite;
+    height: 5rem;
+    padding: .75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h4{
+    text-align: center;
+    margin:  3rem 3rem 1.5rem;
+}
+.task-field{
+    margin:  3rem 3rem 1.5rem;
+    display: grid;
+    row-gap: 1rem;
+}
+.form-field{
+    width: 100%;
+    display: grid;
+    padding: 1rem 2rem;
+    row-gap: 2rem;
+}
+.input-field{
+    padding: .75rem 0;
+    text-indent: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    outline: none;
+}
+#checking{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.task-task{
+    cursor: pointer;
+    padding: 0 .75rem;
+    transition: .3s ease;
+}
+.task-title{
+    position: relative;
+}
+.task-field .reminder{
+    border-left:  5px solid green;
+}
+.times-icon{
+    cursor: pointer;
 }
